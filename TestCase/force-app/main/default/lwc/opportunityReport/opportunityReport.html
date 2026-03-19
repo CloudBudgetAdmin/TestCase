@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Opportunity Report" icon-name="standard:opportunity">
+        <div slot="actions">
+            <lightning-combobox
+                    name="budgetYear"
+                    label="Year"
+                    value={budgetYear}
+                    options={yearOptions}
+                    onchange={handleChange}>
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-p-around_medium">
+            <lightning-datatable
+                    key-field="Id"
+                    data={opportunities}
+                    columns={columns}
+                    hide-checkbox-column>
+            </lightning-datatable>
+        </div>
+
+        <template lwc:if={showSpinner}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>
