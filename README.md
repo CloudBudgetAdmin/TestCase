@@ -12,7 +12,7 @@ Your goal is to enhance an existing "Opportunity Report" interface by adding dat
 ## 🛠 Preparation & Setup
 Before you begin, please complete the following steps:
 
-1. **Deploy** the repository source code to your Salesforce Developer Edition or Scratch Org.
+1. **Copy** the repository source code to your Salesforce Developer Edition or Scratch Org.
 2. **Create a Lightning Tab** for the `Opportunity Report` component and add it to any Lightning App.
 3. **Generate Test Data**: Create at least 10-15 Opportunity records with various *Amounts*, *Stages*, and *Close Dates*.
 4. **Verify**: Open the tab and ensure the table correctly displays your test Opportunities.
